@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "cognee": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/jacquesvandenberg/eos-forus/app-cognee/cognee-mcp",
+        "run",
+        "cognee",
+        "--no-migration"
+      ],
+      "env": {
+        "ENV": "local",
+        "TOKENIZERS_PARALLELISM": "false",
+        "LLM_API_KEY": "ollama",
+        "LLM_MODEL": "qwen2.5:7b",
+        "LLM_PROVIDER": "ollama",
+        "LLM_ENDPOINT": "http://localhost:11434/v1",
+        "EMBEDDING_PROVIDER": "ollama",
+        "EMBEDDING_MODEL": "nomic-embed-text",
+        "EMBEDDING_ENDPOINT": "http://localhost:11434/api/embeddings",
+        "EMBEDDING_DIMENSIONS": "768",
+        "HUGGINGFACE_TOKENIZER": "nomic-ai/nomic-embed-text-v1.5"
+      }
+    }
+  }
+}
